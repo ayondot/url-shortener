@@ -1,0 +1,80 @@
+@import url(https://fonts.googleapis.com/css?family=Lora:400italic,700italic|Just+Another+Hand);
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none !important;
+}
+
+body{ 
+	font-family: 'Lora', serif; 
+	font-size: 7em;
+	background: #5a5353;
+	background-image: url('../img/multi.jpg');
+}
+
+h1{
+	font-family: 'Just Another Hand', cursive;
+	background: #262222;
+	color: #9e8e8e;
+	margin-top: 0;
+	text-shadow: 1px 1px #fff;
+	letter-spacing: 8px;
+	font-size: 0.7em;
+	padding-top: 8px;
+}
+
+.settings{
+	background-color: #cccccc;
+	width: 15%;
+	margin: 1%;
+	border: 2px solid #736262;
+    border-radius: 10px;
+
+}
+
+.quizbox{
+	margin-top: 100px;
+	background-color: rgba(255, 255, 255, 0.8);
+}
+
+#submit{
+	width: 85%;
+	margin: 2% 7%;
+	background: #688d8d;
+	color: #c8c8c8;
+	text-shadow: 1px 2px #000;
+}
+
+#result_container{
+	width: auto;
+	display: inline;
+	padding: 20px;
+}
+
+#result{
+	width: 30%;
+	display: inline;
+	margin-top: 5px;
+	background: #ccd796;
+	color: #4f83aa;
+}
+
+#result, #submit{
+	height: 75px;
+	font-size: 55%;
+}
+
+@media screen and (max-width: 480px) {
+  body{ font-size: 4em; }
+  #result{ width: 30%; }
+  .settings{ width: 50%; }
+}
